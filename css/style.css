@@ -109,6 +109,8 @@ main {
   height: auto;
   gap: 0.5rem;
   background-color: var(--prim-clr);
+  z-index: 560;
+  pointer-events: all;
 }
 #tracking_pad .top_chev {
   /*   border-bottom: 1px solid transparent;
@@ -192,6 +194,7 @@ header span {
   min-height: 50vh;
   padding-left: 15rem;
 }
+
 #slider {
   width: 60%;
   position: relative;
@@ -331,16 +334,15 @@ nav a {
   background: none;
   border-left: transparent;
   border-top: transparent;
-
   position: absolute;
   z-index: 500;
   top: 50%;
   font-size: 2rem;
   transform: translateY(-50%);
-
+  pointer-events: visible;
   cursor: pointer;
+  pointer-events: all;
 }
-
 .carousel-button:hover,
 .carousel-button:focus {
   color: white;
@@ -438,9 +440,10 @@ nav a {
 }
 
 #about_sec {
-  min-height: 100vh;
+  height: 100vh;
   position: relative;
-  pointer-events: none;
+  /*   pointer-events: none;
+ */
 }
 
 .aa {
@@ -457,8 +460,10 @@ nav a {
   object-position: center;
   cursor: pointer;
   pointer-events: fill;
-
   z-index: 55555;
+}
+.header_about {
+  min-height: 50vh !important;
 }
 .header_work_graphics .aa:hover .npm {
   right: 0;
