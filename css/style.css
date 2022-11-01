@@ -863,6 +863,14 @@ nav a {
   .header_work_graphics svg {
     width: 70px;
   }
+  #popup_about svg {
+    width: 50px;
+  }
+  #popup_about div {
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+  }
   .header_work_graphics .aa:hover .bi-sunglasses {
     top: 8%;
     right: 26%;
@@ -881,5 +889,29 @@ nav a {
     width: 100%;
     height: 43vh;
     z-index: 555;
+  }
+  #popup_container,
+  #popup_about {
+    width: 90%;
+    height: 0;
+    padding: 1rem;
+    gap: 1rem;
+  }
+  #popup_container p,
+  #popup_about p {
+    font-size: 0.6rem;
+    color: var(--sec-clr);
+  }
+  .popup_container {
+    min-width: 350px;
+    width: 100ch;
+
+    bottom: 90%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    opacity: 1;
+    visibility: visible;
+    transition: 0.5s;
   }
 }
