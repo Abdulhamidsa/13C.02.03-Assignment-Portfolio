@@ -80,12 +80,12 @@ const sliderContact = document.querySelector("#contact_slider");
 const closePop = document.querySelectorAll(".exit");
 const closeArrow = document.querySelector(".bi-arrow-right-square");
 
-/* document.querySelector(".contact").addEventListener("click", () => {
+document.querySelector(".contact").addEventListener("click", () => {
   sliderContact.style.right = "0";
-}); */
-/* document.querySelector(".bi-arrow-right-square").addEventListener("click", () => {
-  sliderContact.style.right = "-50%";
-}); */
+});
+document.querySelector(".bi-arrow-right-square").addEventListener("click", () => {
+  sliderContact.style.right = "-100%";
+});
 buttonsOverlay.forEach((button) => {
   button.addEventListener("click", (evt) => {
     addOverlay();
