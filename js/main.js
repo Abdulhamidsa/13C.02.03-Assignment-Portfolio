@@ -71,7 +71,7 @@ sliders.forEach((button) => {
   });
 });
 
-const buttonsOverlay = document.querySelectorAll("button");
+const buttonsOverlay = document.querySelectorAll(".viewP");
 const body = document.querySelector("body");
 const overlay = document.querySelector("#overlay");
 const popContainer = document.querySelector("#popup_about, #popup_container");
@@ -97,12 +97,13 @@ function addOverlay() {
   overlay.style.opacity = "1";
   popContainer.style.visibility = "visible";
   popContainer.style.opacity = "1";
-  popContainer.style.height = "70vh";
+  popContainer.style.height = "55vh";
   popAbout.style.visibility = "visible";
   popAbout.style.opacity = "1";
   popAbout.style.height = "70vh";
   console.log("open pop up");
-  openPopUp();
+  /*   openPopUp();
+   */
 }
 
 closePop.forEach((x) => {
