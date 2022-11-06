@@ -167,6 +167,14 @@ header h1,
   margin-bottom: 1.2rem;
   font-weight: 100;
 }
+header h1 {
+  animation: typing 1s steps(10, end) 1, blink 0.7s step-end infinite;
+  animation-fill-mode: backwards;
+  animation-delay: 1s;
+  overflow: hidden;
+  border-right: 0.2rem solid var(--accent-clr-red);
+}
+
 header h2 {
   font-size: 3rem;
   color: var(--sec-clr);
@@ -202,6 +210,10 @@ header span {
   overflow: hidden;
 }
 
+.logo {
+  width: 10%;
+  cursor: pointer;
+}
 nav {
   position: relative;
 }
@@ -381,6 +393,8 @@ nav a {
   background-color: var(--prim-clr);
   border: 1px var(--accent-clr-gold) solid;
   padding: 0.5rem 2.5rem 0.5rem 2.5rem;
+  transition: 0.1s ease-out;
+
   cursor: pointer;
 }
 .slid p {
@@ -524,6 +538,10 @@ nav a {
 }
 .aa button {
   position: absolute;
+  background-color: var(--prim-clr);
+  color: var(--accent-clr-gold);
+  border-color: var(--sec-clr);
+  font-size: 1.3rem;
   bottom: 0%;
   z-index: 5555;
   left: 50%;
@@ -534,6 +552,11 @@ nav a {
   opacity: 0;
   transition: 0.5s ease-in-out;
   pointer-events: all;
+  cursor: pointer;
+}
+.aa button:hover,
+.viewP:hover {
+  border: inset var(--accent-clr-gold);
 }
 
 /* popup about */
@@ -608,6 +631,23 @@ nav a {
 
   50% {
     filter: brightness(110%) drop-shadow(0 0 40px --accent-clr-red);
+  }
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 60%;
+  }
+}
+@keyframes blink {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: var(--accent-clr-red);
   }
 }
 
@@ -741,7 +781,7 @@ nav a {
   }
 
   .fixed_nav {
-    position: absolute;
+    position: fixed;
     justify-content: end;
     -webkit-backdrop-filter: blur(0px);
     backdrop-filter: blur(0px);
@@ -766,6 +806,7 @@ nav a {
     font-size: 3rem;
     margin-bottom: 1rem;
   }
+
   header h2 {
     font-size: 1.4rem;
     padding-bottom: 0.5rem;
@@ -858,7 +899,7 @@ nav a {
     object-fit: cover;
     object-position: center;
     cursor: pointer;
-    pointer-events: fill;
+    pointer-events: none;
     z-index: 55555;
   }
   .header_work_graphics svg {
@@ -872,12 +913,7 @@ nav a {
     align-items: center;
     gap: 0.5rem;
   }
-  .header_work_graphics .aa:hover .bi-sunglasses {
-    top: 8%;
-    right: 26%;
-    opacity: 1;
-    width: 110px;
-  }
+
   .header_work_graphics {
     display: flex;
     justify-content: center;
@@ -945,10 +981,10 @@ nav a {
     right: 0%;
   }
   .bi-sunglasses {
-    right: 22%;
-    top: 11%;
+    right: 28%;
+    top: 10%;
     opacity: 1;
-    width: 160px !important;
+    width: 130px !important;
     height: auto;
   }
   .css {
@@ -975,8 +1011,5 @@ nav a {
     position: absolute;
     top: 80%;
     right: -300%;
-    z-index: 55;
-    box-shadow: rgba(255, 255, 255, 0.464) 0px 1px 2px 0px, rgba(255, 255, 255, 0.448) 0px 1px 3px 1px;
-    transition: 500ms ease-in-out;
   }
 }

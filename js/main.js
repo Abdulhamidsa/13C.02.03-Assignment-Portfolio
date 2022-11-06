@@ -2,6 +2,8 @@ window.addEventListener("DOMContentLoaded", init);
 
 function init() {
   buttons();
+  typeWriter();
+  document.querySelector("#typewriter").innerHTML = "";
 }
 
 function buttons() {
@@ -81,10 +83,10 @@ const closePop = document.querySelectorAll(".exit");
 const closeArrow = document.querySelector(".bi-arrow-right-square");
 
 document.querySelector(".contact").addEventListener("click", () => {
-  sliderContact.style.right = "0";
+  sliderContact.style.right = "0%";
 });
 document.querySelector(".bi-arrow-right-square").addEventListener("click", () => {
-  sliderContact.style.right = "-100%";
+  sliderContact.style.right = "-200%";
 });
 buttonsOverlay.forEach((button) => {
   button.addEventListener("click", (evt) => {
@@ -121,5 +123,18 @@ closePop.forEach((x) => {
 });
 /* function closePopUp() {
   closePop.style.visibility = "hidden";
+}
+ */
+
+/* let i = -1;
+let speed = 150;
+let text = document.getElementById("typewriter").textContent;
+
+function typeWriter() {
+  if (i < text.length) {
+    document.querySelector("#typewriter").innerHTML += text.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
 }
  */
