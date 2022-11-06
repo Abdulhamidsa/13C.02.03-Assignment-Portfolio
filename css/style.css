@@ -895,7 +895,7 @@ nav a {
   }
   .header_work_graphics img {
     width: 100%;
-    height: 65vh;
+    height: 45vh;
     object-fit: cover;
     object-position: center;
     cursor: pointer;
@@ -969,11 +969,7 @@ nav a {
   .header_work_graphics .aa:hover .tw_css {
     right: 0%;
   }
-  .header_work_graphics .aa:hover .bi-sunglasses {
-    top: 11%;
-    opacity: 1;
-    right: 22%;
-  }
+
   .header_work_graphics button {
     opacity: 1;
   }
@@ -981,11 +977,7 @@ nav a {
     right: 0%;
   }
   .bi-sunglasses {
-    right: 28%;
-    top: 10%;
-    opacity: 1;
-    width: 130px !important;
-    height: auto;
+    display: none;
   }
   .css {
     right: 80%;
