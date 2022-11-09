@@ -134,7 +134,6 @@ main {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  z-index: 5555555;
 }
 #tracking_side span {
   width: 10px;
@@ -483,6 +482,8 @@ nav a {
 }
 .popup_container > img {
   position: relative;
+  width: 100%;
+  object-fit: contain;
 }
 #exit {
   position: sticky;
@@ -1030,7 +1031,9 @@ nav a {
     align-items: center;
     gap: 0.5rem;
   }
-
+  .about_skills ul {
+    gap: 1rem;
+  }
   .header_work_graphics {
     display: flex;
     justify-content: center;
@@ -1058,7 +1061,7 @@ nav a {
   }
   .popup_container {
     min-width: 350px;
-    width: 100ch;
+    width: fit-content;
 
     bottom: 90%;
     left: 0;
