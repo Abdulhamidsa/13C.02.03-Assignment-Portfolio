@@ -5,29 +5,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!--    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <!-- FONTS -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@300&display=swap"
         rel="stylesheet">
+    <!-- CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
     <link rel="stylesheet" href="./css/style.css">
-    <script src="./js/main.js" defer></script>
-    <script src="./js/modul.js" type="module"></script>
-
+    <!-- SCRIPT -->
+    <script src="./js/main.js" type="module"></script>
     <title>Welcome.</title>
 </head>
 
 <body>
     <div id="overlay"></div>
-
     <nav>
-
         <div class="fixed_nav">
             <img class="logo" src="/media/svg/logo.svg" alt="">
             <label for="burger">
@@ -37,7 +36,7 @@
                     <li><a href="#home_sec">Home</a></li>
                     <li><a href="#my_work_sec">My work</a></li>
                     <li><a href="#about_sec">About</a></li>
-                    <li><a class="contact">Contact me</a></li>
+                    <li><a class="contact dark_button">Contact me</a></li>
                 </ul>
                 <div id="contact_slider">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="30" fill="var(--sec-clr)"
@@ -62,17 +61,21 @@
         </div>
         <article id="home_sec">
             <header>
-                <h1 id="typewriter">Welcome.</h1>
+                <h1 id="">Welcome.</h1>
                 <div>
-                    <h2>I am a <span>web</span> designer.</h2>
-                    <p>Front end developer who focuses on creating an elegant, smooth, and clean
-                        webdesign.</p>
+                    <h2>I am a <span>Front End</span> developer.</h2>
+                    <p>Focusing on creating an elegant, smooth, and clean
+                        webdesign, hand in hand with delivering end-to-end UI/UX design solutions. </p>
+
+                    <p></p>
                 </div>
             </header>
         </article>
         <article id="my_work_sec">
             <div class="header_work">
                 <h2>My Work.</h2>
+                <p>Here are some of my projects during the previuos semesters, some of the projects were design and <br>
+                    UI/UX oriented and others coding was the main part of it. </p>
             </div>
 
 
@@ -84,78 +87,96 @@
                         <button type="button" class="carousel-button next" data-carousel-button="next"></button>
                         <ul data-slides>
                             <li class="slide" data-active>
-                                <p class="numbertext">1 / 3</p>
+                                <p class="numbertext">1 / 4</p>
                                 <img src="./media/images/colors_and_anim_web.png" alt=" Nature
                                 Image #1">
                                 <div class="slid">
-                                    <p>Focusing on working with colors and web animation</p>
-                                    <button class="viewP" type="button">View Project</button>
+                                    <p>Recrating Dynamic and responsive solutions</p>
+                                    <button class="viewP1" type="button">View Project</button>
                                 </div>
                             </li>
                             <li class="slide">
-                                <p class="numbertext">2 / 3</p>
+                                <p class="numbertext">2 / 4</p>
                                 <img src="./media/images/responsive_web.png" alt=" Nature Image #2">
                                 <div class="slid">
-                                    <p>Creating a user-friendly and responsive website</p>
-                                    <button class="viewP" type="button">View Project</button>
+                                    <p>Creating a high-fidelity prototype</p>
+                                    <button class="viewP2" type="button">View Project</button>
                                 </div>
                             </li>
                             <li class="slide">
-                                <p class="numbertext">3 / 3</p>
+                                <p class="numbertext">3 / 4</p>
                                 <img src="./media/images/fonts_and_ui.png" alt=" Nature Image #3">
                                 <div class="slid">
-                                    <p>Working with fonts and ui component </p>
-                                    <button class="viewP" type="button">View Project</button>
+                                    <p>Building an advanced javaScript based solutions </p>
+                                    <button class="viewP3" type="button">View Project</button>
+                                </div>
+                            </li>
+
+                            <li class="slide">
+                                <p class="numbertext">4 / 4</p>
+                                <img src="./media/images/game_js.png" alt=" Nature Image #3">
+                                <div class="slid">
+                                    <p>Building a game using javaScript </p>
+                                    <button class="viewP4" type="button">View Project</button>
                                 </div>
                             </li>
                         </ul>
                     </div>
                 </div>
-
                 <section class="popup">
+                    <div class="popup_container">
 
-                    <div id="popup_container">
+                        <img src="./media/images/responsive_web.png" alt="">
 
-                        <div>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="var(--sec-clr)"
+
+                        <div class="popup_text">
+
+                            <p></p> <a href="" target="_blank" rel="noopener noreferrer">Live Project</a>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="var(--sec-clr)"
                                 class=" exit bi bi-file-x-fill" viewBox="0 0 16 16">
-                                <path
-                                    d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM6.854 6.146L8 7.293l1.146-1.147a.5.5 0 1 1 .708.708L8.707 8l1.147 1.146a.5.5 0 0 1-.708.708L8 8.707 6.854 9.854a.5.5 0 0 1-.708-.708L7.293 8 6.146 6.854a.5.5 0 1 1 .708-.708z" />
+                                <path d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM6.854
+                                6.146L8 7.293l1.146-1.147a.5.5 0 1 1 .708.708L8.707 8l1.147 1.146a.5.5 0 0 1-.708.708L8
+                                8.707 6.854 9.854a.5.5 0 0 1-.708-.708L7.293 8 6.146 6.854a.5.5 0 1 1 .708-.708z" />
                             </svg>
                         </div>
-                        <h1>fsafsafsa</h1>
-                        <img src="./media/images/colors_and_anim_web.png" alt="">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque optio, tempora aut facilis
-                            doloremque quidem, vitae consequuntur commodi odio accusamus quaerat quae. Suscipit labore
-                            rem repudiandae architecto, eaque aliquam exercitationem!</p>
                     </div>
                 </section>
             </section>
         </article>
         <article id="about_sec">
             <div id="popup_about">
-                <div>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="var(--sec-clr)"
-                        class=" exit bi bi-file-x-fill" viewBox="0 0 16 16">
-                        <path
-                            d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM6.854 6.146L8 7.293l1.146-1.147a.5.5 0 1 1 .708.708L8.707 8l1.147 1.146a.5.5 0 0 1-.708.708L8 8.707 6.854 9.854a.5.5 0 0 1-.708-.708L7.293 8 6.146 6.854a.5.5 0 1 1 .708-.708z" />
-                    </svg>
-                </div>
+
                 <div>
                     <h2>Who I am I ?.</h2>
-                    <P>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem repudiandae earum sint ipsum
-                        officia
-                        illum libero similique iusto, saepe aperiam. Quae repellat ducimus eaque ut ipsum, laborum fugit
-                        eos
-                        quidem.</P>
+                    <P> I am a 26 years old guy and a nerd to be! I study Multimedia Design - Front-End elective at kea
+                        erhvervsakademi. I enjoy the long hours coding with a monster energy bottle knowing the
+                        satisfiction I will have when running a full functioning code at the end!
+                        <br> <br>
+                        I love trying out new challanges and being in different enviroments during my work, wether I
+                        work alone or in a team.
+                    </P>
                 </div>
                 <div>
                     <h2>My skills ?. </h2>
-                    <P>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem repudiandae earum sint ipsum
-                        officia
-                        illum libero similique iusto, saepe aperiam. Quae repellat ducimus eaque ut ipsum, laborum fugit
-                        eos
-                        quidem.</P>
+                    <P>During my time at KEA I have gained a wide range of experince in different asspects, both in
+                        design and coding.</P>
+                    <div class="about_skills">
+                        <h2>Some of the main technologies I worked with:</h2>
+                        <ul>
+                            <li>HTML/CSS</li>
+                            <li>javaScript</li>
+                            <li>Git</li>
+                            <li>GitHub</li>
+                            <li>Npm</li>
+                            <li>Vite</li>
+                            <li>Ract</li>
+                            <li>TailWind</li>
+                            <li>WordPress (Database)</li>
+                            <li>SASS</li>
+
+                        </ul>
+                    </div>
+
                     <div>
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="100px" height="100px">
                             <path fill="#0277BD" d="M41,5H7l3,34l14,4l14-4L41,5L41,5z" />
@@ -204,6 +225,13 @@
                                 d="M33.03,25.6c-0.65-0.9-1.59-1.52-2.8-1.85c0,0,1.02-0.37,1.94-1.75c0.55-0.88,0.83-1.94,0.83-3.18 c0-2.15-0.78-3.8-2.34-4.93C29.1,12.76,27.34,12,24.35,12H15v24h10.43c2.83-0.02,4.96-0.63,6.41-1.8c1.44-1.19,2.16-2.95,2.16-5.3 C34,27.6,33.68,26.5,33.03,25.6z M21,16c0,0,4.17,0,4.25,0c1.52,0,2.75,1.23,2.75,2.75c0,1.52-1.23,2.75-2.75,2.75 c-0.08,0-4.25,0-4.25,0V16z M26,32h-5v-6h5c1.66,0,3,1.34,3,3C29,30.66,27.66,32,26,32z" />
                         </svg>
                     </div>
+                </div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="var(--sec-clr)"
+                        class=" exit bi bi-file-x-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM6.854 6.146L8 7.293l1.146-1.147a.5.5 0 1 1 .708.708L8.707 8l1.147 1.146a.5.5 0 0 1-.708.708L8 8.707 6.854 9.854a.5.5 0 0 1-.708-.708L7.293 8 6.146 6.854a.5.5 0 1 1 .708-.708z" />
+                    </svg>
                 </div>
             </div>
             <div class="header_work header_about">
@@ -262,7 +290,7 @@
                         <path fill="#fff"
                             d="M3 29L8 29 8 21 11 21 11 29 13 29 13 18 3 18zM16 18v14h5v-3h5V18H16zM24 26h-3v-5h3V26zM29 18L29 29 34 29 34 21 37 21 37 29 40 29 40 21 43 21 43 29 45 29 45 18z" />
                     </svg>
-                    <button class="viewP" type="button">Me?.</button>
+                    <button class="view_about dark_button" type="button">Me?.</button>
                 </div>
 
             </div>

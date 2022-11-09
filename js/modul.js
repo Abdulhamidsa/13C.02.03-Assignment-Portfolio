@@ -1,4 +1,4 @@
-import { animate, scroll, stagger, inView } from "https://cdn.skypack.dev/motion";
+/* import { animate, scroll, stagger, inView } from "https://cdn.skypack.dev/motion";
 
 const body = document.querySelector("body");
 const topSection = document.querySelectorAll("article");
@@ -9,7 +9,7 @@ function ahh() {
   console.log("asssssss");
 }
 inView(topSection, ({ target }) => {
-  animate(target.querySelectorAll("p, h2"), { y: ["100%", "-10%"] }, { duration: 1 }, { delay: 1}, { easing: "ease-out-in" });
+  animate(target.querySelector("h2"), { x: ["100%", "0%"] }, { duration: 1 }, { delay: 50 }, { easing: "ease-out" });
+  animate(target.querySelector("p"), { x: ["-100%", "0%"] }, { duration: 1 }, { delay: 50 }, { easing: "ease-out" });
 });
-
-console.log("ass");
+ */
