@@ -368,7 +368,7 @@ nav a {
 .slide > img {
   display: block;
   width: 100%;
-  height: 140px;
+  height: 250px;
   object-fit: cover;
   object-position: top;
 }
@@ -938,7 +938,8 @@ nav a {
     height: 233px;
   }
   .slider {
-    min-height: 65vh;
+    /*     min-height: 65vh;
+ */
   }
   .slid p {
     font-size: 0.7rem;
