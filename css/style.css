@@ -157,10 +157,6 @@ main {
   z-index: 560;
   pointer-events: all;
 }
-#tracking_pad .top_chev {
-  /*   border-bottom: 1px solid transparent;
- */
-}
 #tracking_pad div {
   padding: 1rem;
   position: relative;
@@ -219,10 +215,10 @@ header h1 {
 .typing {
   animation: typing 1s steps(10, end) 1, blink 0.7s step-end infinite;
   animation-fill-mode: backwards;
-}
+} /* 
 .hiddin {
   opacity: 0;
-}
+} */
 
 header h2 {
   font-size: 3rem;
@@ -260,11 +256,13 @@ header span {
 }
 
 .logo {
-  min-width: 120px;
-  width: 50px;
+  min-width: 140px;
+  width: 70px;
   left: 10%;
   cursor: pointer;
+  border: 0.1px #fbfbfb4c solid;
 }
+
 nav {
   position: relative;
 }
@@ -283,6 +281,7 @@ nav {
   padding-top: 2rem;
   padding-bottom: 2rem;
   z-index: 590;
+  transition: 0.5s ease-in-out;
 }
 
 nav div ul {
@@ -294,10 +293,6 @@ nav div ul {
 nav div ul li:not(:last-child) {
   overflow: hidden;
 }
-/* nav div ul li:not(:last-child) {
-  overflow: hidden;
-}
- */
 nav div ul li:not(:last-child) a::before {
   content: "";
   position: absolute;
@@ -317,9 +312,6 @@ nav div ul li:not(:last-child) a::before {
 nav div ul li a:active {
   color: var(--accent-clr-red);
 }
-nav div ul li a:visited {
-}
-
 nav ul li:nth-child(4) a {
   color: var(--accent-clr-gold);
   padding-left: 2rem;

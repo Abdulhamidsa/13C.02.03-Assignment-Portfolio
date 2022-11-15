@@ -130,6 +130,7 @@ const popParagraph = document.querySelector(".popup_container p");
 const popList = document.querySelectorAll(".popup_container li");
 const popImg = document.querySelector(".popup_container img");
 const popLink = document.querySelector(".popup_container a");
+const logo = document.querySelector(".logo");
 
 document.querySelector(".contact").addEventListener("click", () => {
   sliderContact.style.right = "0%";
@@ -151,7 +152,8 @@ buttonProject1.addEventListener("click", () => {
 });
 
 buttonProject2.addEventListener("click", () => {
-  popParagraph.innerHTML = "xxxxx";
+  popParagraph.innerHTML =
+    "In this assignment our goal is to create an XD prototype, starting with a low-fidelity XD prototype and to end up with a high-fidelity one. It is a long process where it develops our individual skills in understanding the user experience, and both finding user flows and coming up with a solution for them.";
   popImg.src = "./media/images/responsive_web.png";
   popLink.href = "https://xd.adobe.com/view/0fe2fd8f-6a06-4077-93d3-bffea9a6e7d7-5ab1/?fullscreen&hints=off";
   popContainer.scrollTo(0, 0);
@@ -159,7 +161,8 @@ buttonProject2.addEventListener("click", () => {
   addOverlay();
 });
 buttonProject3.addEventListener("click", () => {
-  popParagraph.innerHTML = "nooo";
+  popParagraph.innerHTML =
+    "In this project the focus was on javaScript. Fetching data from the database and clean it by creating a new prototype (object). The goal was to work as much as possible with functions and passing them as parameters as well. <br> This project only focuses on the functionality of the website, rather than the design and all UX - UI related.";
   popImg.src = "./media/images/fonts_and_ui.png";
   popLink.href = "https://abdulhamidsa.github.io/HogwartHackedList/hogwart_project.html";
   popContainer.scrollTo(0, 0);
@@ -167,7 +170,8 @@ buttonProject3.addEventListener("click", () => {
   addOverlay();
 });
 buttonProject4.addEventListener("click", () => {
-  popParagraph.innerHTML = "nooo";
+  popParagraph.innerHTML =
+    "First semester work. This project is a game that depends heavily on javaScript, and was the first time I worked with the language. The goal was to control the visual aspect of the game and make it interactive when the player press on something, toggling classes on and off was the biggest method to run the game.";
   popImg.src = "./media/images/game_js.png";
   popLink.href = "https://designslayer.dk/theme3/catchMeOutSide/index.html";
   popContainer.scrollTo(0, 0);
